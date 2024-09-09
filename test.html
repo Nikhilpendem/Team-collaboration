@@ -1,1 +1,58 @@
-rgerhegbdfg rhnrbfg
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trading Platform </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="question-container">
+        <div class="card" id="question-1">
+            <h2>Question 1</h2>
+            <p> which platform you using for trading?</p>
+            <div class="options">
+                <button onclick="selectOption(1, 'A')">A. Groww App</button><br>
+                <button onclick="selectOption(1, 'B')">B. Paytm App</button><br>
+                <button onclick="selectOption(1, 'C')">C. Upstox</button><br>
+                <button onclick="selectOption(1, 'D')">D. Other Trading Platforms</button><br>
+            </div>
+        </div>
+        <div class="card" id="question-2" style="display:none;">
+            <h2>Question 2</h2>
+            <p> Select the stocks you invested or intrested to invest?</p>
+            <div class="options">
+                <button onclick="selectOption(2, 'A')">A. Mutual Funds</button><br>
+                <button onclick="selectOption(2, 'B')">B. Bonds</button><br>
+                <button onclick="selectOption(2, 'C')">C. Stocks</button><br>
+                <button onclick="selectOption(2, 'D')">D. Others</button><br>
+            </div>
+        </div>
+        <div class="card" id="question-3" style="display:none;">
+            <h2>Question 3</h2>
+            <p> How many years are you trading from?</p>
+            <div class="options">
+                <button onclick="selectOption(3, 'A')">A. 0 - 1 Years</button><br>
+                <button onclick="selectOption(3, 'B')">B. 1 - 2 Years</button><br>
+                <button onclick="selectOption(3, 'C')">C. 2 - 4 Years</button><br>
+                <button onclick="selectOption(3, 'D')">D. More than 4 Years</button><br>
+            </div>
+        </div>
+    </div>
+
+    <div id="summary-screen" style="display:none;">
+        <h2>Summary of Your Answers</h2>
+        <div id="summary"></div>
+        <button onclick="submitQuiz()">Submit</button>
+        <button onclick="resetQuestions()">Start Over</button>
+    </div>
+
+    <div id="title-screen" style="display:none;">
+        <h1>Thank you for taking the quiz!</h1>
+        <p>Your answers have been submitted.</p>
+        <button onclick="resetQuestions()">Start Over</button>
+    </div>
+
+    <script src="javascript.js"></script>
+</body>
+</html>
